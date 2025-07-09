@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-code-generation',
+  selector: 'app-robotics-automation',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './code-generation.component.html',
-  styleUrl: './code-generation.component.scss'
+  templateUrl: './robotics-automation.component.html',
+  styleUrl: './robotics-automation.component.scss'
 })
-export class CodeGenerationComponent {
+export class RoboticsAutomationComponent {
 window = window;
 
    experts = [

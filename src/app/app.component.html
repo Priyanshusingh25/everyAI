@@ -1,6 +1,21 @@
 <div class="app-container">
   <header class="header">
-    <h1 class="title">Every AI</h1>
+    <h1 class="title mb-3">Every AI</h1>
+    <div class="search-container">
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search AI Categories..."
+          [(ngModel)]="searchQuery"
+          (input)="onSearch()"
+          aria-label="Search AI categories"
+          #searchInput
+        />
+        
+      </div>
+    </div>
   </header>
 
   <div class="table-container">
@@ -9,43 +24,43 @@
         <tr>
           <td class="table-header" (click)="onCategoryClick('Large Language Models')"
               (mouseenter)="onMouseEnter(0)" (mouseleave)="onMouseLeave(0)">
-            <li [@hoverAnimation]="getState(0)">Large Language Models (LLMs)</li>
+            <li [@hoverAnimation]="getState(0)" *ngIf="isCategoryVisible('Large Language Models')">Large Language Models (LLMs)</li>
           </td>
           <td class="table-header" (click)="onCategoryClick('Image Generation')"
               (mouseenter)="onMouseEnter(1)" (mouseleave)="onMouseLeave(1)">
-            <li [@hoverAnimation]="getState(1)">Image Generation</li>
+            <li [@hoverAnimation]="getState(1)" *ngIf="isCategoryVisible('Image Generation')">Image Generation</li>
           </td>
           <td class="table-header" (click)="onCategoryClick('Music Generation')"
               (mouseenter)="onMouseEnter(2)" (mouseleave)="onMouseLeave(2)">
-            <li [@hoverAnimation]="getState(2)">Music/Audio Generation</li>
+            <li [@hoverAnimation]="getState(2)" *ngIf="isCategoryVisible('Music Generation')">Music/Audio Generation</li>
           </td>
         </tr>
         <tr>
           <td class="table-header" (click)="onCategoryClick('Video Generation')"
               (mouseenter)="onMouseEnter(3)" (mouseleave)="onMouseLeave(3)">
-            <li [@hoverAnimation]="getState(3)">Video Generation</li>
+            <li [@hoverAnimation]="getState(3)" *ngIf="isCategoryVisible('Video Generation')">Video Generation</li>
           </td>
           <td class="table-header" (click)="onCategoryClick('Code Generation')"
               (mouseenter)="onMouseEnter(4)" (mouseleave)="onMouseLeave(4)">
-            <li [@hoverAnimation]="getState(4)">Code Generation</li>
+            <li [@hoverAnimation]="getState(4)" *ngIf="isCategoryVisible('Code Generation')">Code Generation</li>
           </td>
           <td class="table-header" (click)="onCategoryClick('Machine Learning Platforms')"
               (mouseenter)="onMouseEnter(5)" (mouseleave)="onMouseLeave(5)">
-            <li [@hoverAnimation]="getState(5)">Machine Learning Platforms & Frameworks</li>
+            <li [@hoverAnimation]="getState(5)" *ngIf="isCategoryVisible('Machine Learning Platforms')">Machine Learning Platforms & Frameworks</li>
           </td>
         </tr>
         <tr>
           <td class="table-header" (click)="onCategoryClick('NLP Tools')"
               (mouseenter)="onMouseEnter(6)" (mouseleave)="onMouseLeave(6)">
-            <li [@hoverAnimation]="getState(6)">Natural Language Processing (NLP) Tools</li>
+            <li [@hoverAnimation]="getState(6)" *ngIf="isCategoryVisible('NLP Tools')">Natural Language Processing (NLP) Tools</li>
           </td>
           <td class="table-header" (click)="onCategoryClick('Computer Vision Tools')"
               (mouseenter)="onMouseEnter(7)" (mouseleave)="onMouseLeave(7)">
-            <li [@hoverAnimation]="getState(7)">Computer Vision (CV) Tools</li>
+            <li [@hoverAnimation]="getState(7)" *ngIf="isCategoryVisible('Computer Vision Tools')">Computer Vision (CV) Tools</li>
           </td>
           <td class="table-header" (click)="onCategoryClick('Robotics and Automation')"
               (mouseenter)="onMouseEnter(8)" (mouseleave)="onMouseLeave(8)">
-            <li [@hoverAnimation]="getState(8)">Robotics and Automation AI</li>
+            <li [@hoverAnimation]="getState(8)" *ngIf="isCategoryVisible('Robotics and Automation')">Robotics and Automation AI</li>
           </td>
         </tr>
       </tbody>

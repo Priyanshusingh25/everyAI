@@ -1,1 +1,91 @@
-<p>ml-platforms works!</p>
+<div class="grid-container-web container-fluid">
+  <div class="row align-items-center mb-4">
+    <div class=" col-12">
+      <h1 class="fw-medium section-heading">
+        <span class="highlight">Most Popular.</span> <br>
+        Large Language Models (LLMs).
+      </h1>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-xl-3 col-lg-4 col-6" *ngFor="let expert of experts; let i = index">
+      <div class="card expert-card h-100" role="button">
+        <img class="profile-img" [src]="expert.image" alt="{{ expert.name }}" />
+        <div class="info p-3">
+          <div class="row">
+            <div class="col-9">
+              <h2 class="fs-6 mb-1">{{ expert.name }}</h2>
+              <p class="role">{{ expert.role }}</p>
+            </div>
+            <div class="col-3">
+              <div class="rating mb-2">
+                <span class="star">
+                  <svg width="17" height="17" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.2046 2.99254L13.6784 5.94018C13.8794 6.35051 14.4153 6.74409 14.8675 6.81945L17.5388 7.26327C19.2471 7.54799 19.6491 8.78734 18.4181 10.0099L16.3413 12.0867C15.9896 12.4384 15.797 13.1167 15.9059 13.6024L16.5005 16.1732C16.9694 18.2081 15.8892 18.9952 14.0887 17.9317L11.5849 16.4495C11.1327 16.1816 10.3874 16.1816 9.92688 16.4495L7.42306 17.9317C5.63102 18.9952 4.54241 18.1997 5.01135 16.1732L5.6059 13.6024C5.71476 13.1167 5.52216 12.4384 5.17045 12.0867L3.09371 10.0099C1.87111 8.78734 2.26468 7.54799 3.97298 7.26327L6.64428 6.81945C7.0881 6.74409 7.62403 6.35051 7.82501 5.94018L9.29883 2.99254C10.1027 1.39311 11.4091 1.39311 12.2046 2.99254Z"
+                      fill="#EFBB00" />
+                  </svg>
+                </span>
+                <span>{{ expert.rating }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="details">
+            <span class="time me-1">
+              <a [href]="expert.url" target="_blank" rel="noopener noreferrer">{{ expert.link }}</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container-mobile container-fluid pb-5">
+  <div class="row align-items-center px-4 py-5">
+    <div class="col-12 text-start">
+      <h1 class="fw-medium responsive-title">
+        <span class="highlight">Most Popular.</span> <br>
+        Large Language Models (LLMs).
+      </h1>
+    </div>
+  </div>
+
+  <div class="grid horizontal-scroll mt-2 gap-4">
+    <div class="col-10 pb-2" *ngFor="let expert of experts; let i = index">
+      <div class="card expert-card p-3">
+        <img class="profile-img mb-1" [src]="expert.image" alt="{{ expert.name }}" />
+
+        <div class="info d-flex flex-row flex-column justify-content-between ">
+          <div class="d-flex flex-row justify-content-between align-items-center mt-2">
+            <div class="header">
+              <h2 class="fw-semibold mb-0">{{ expert.name }}</h2>
+              <p class="role">{{ expert.role }}</p>
+            </div>
+
+            <div class="rating mb-2">
+              <span class="star">
+                <svg width="17" height="17" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.2046 2.99254L13.6784 5.94018C13.8794 6.35051 14.4153 6.74409 14.8675 6.81945L17.5388 7.26327C19.2471 7.54799 19.6491 8.78734 18.4181 10.0099L16.3413 12.0867C15.9896 12.4384 15.797 13.1167 15.9059 13.6024L16.5005 16.1732C16.9694 18.2081 15.8892 18.9952 14.0887 17.9317L11.5849 16.4495C11.1327 16.1816 10.3874 16.1816 9.92688 16.4495L7.42306 17.9317C5.63102 18.9952 4.54241 18.1997 5.01135 16.1732L5.6059 13.6024C5.71476 13.1167 5.52216 12.4384 5.17045 12.0867L3.09371 10.0099C1.87111 8.78734 2.26468 7.54799 3.97298 7.26327L6.64428 6.81945C7.0881 6.74409 7.62403 6.35051 7.82501 5.94018L9.29883 2.99254C10.1027 1.39311 11.4091 1.39311 12.2046 2.99254Z"
+                    fill="#EFBB00" />
+                </svg>
+
+              </span>
+              <span>{{ expert.rating }}</span>
+            </div>
+          </div>
+
+          <div class="details">
+            <span class="time me-1">
+              <a [href]="expert.url" target="_blank" rel="noopener noreferrer">{{ expert.link }}</a>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

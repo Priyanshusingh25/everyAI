@@ -27,5 +27,13 @@ export const routes: Routes = [
     {
         path: 'nlp-tools',
         loadComponent: () => import('./components/nlp-tools/nlp-tools.component').then(m => m.NlpToolsComponent),
+    },
+    {
+        path: 'computer-vision',
+        loadComponent: () => import('./components/computer-vision/computer-vision.component').then(m => m.ComputerVisionComponent),
+    },
+    {
+        path: 'robotics-automation',
+        loadComponent: () => import('./components/robotics-automation/robotics-automation.component').then(m => m.RoboticsAutomationComponent),
     }
 ];

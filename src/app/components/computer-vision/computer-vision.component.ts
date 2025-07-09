@@ -2,14 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-code-generation',
+  selector: 'app-computer-vision',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './code-generation.component.html',
-  styleUrl: './code-generation.component.scss'
+  templateUrl: './computer-vision.component.html',
+  styleUrl: './computer-vision.component.scss'
 })
-export class CodeGenerationComponent {
-window = window;
+export class ComputerVisionComponent {
+  window = window;
 
    experts = [
   {
