@@ -74,13 +74,23 @@ Want to add more tools or improve the UI? Contributions are welcome! 👀🤗
 Built with ❤️ by Priyanshu Singh
 Feel free to reach out with feedback, ideas, or just to say hi!
 
+*
+*
+*
+*
 
+---
 
+## ⚠️ Usage Restrictions
 
-Copyright (c) 2025 [Priyanshu Singh]
+This project is publicly viewable for educational and demonstration purposes only.
 
-All rights reserved.
+🔒 Do not :
+- Clone, fork, reuse, or redistribute the code or design
+- Host or deploy this project elsewhere
+- Use any part of this repository in your own projects (personal, academic, or commercial)
 
-This source code is made publicly available for viewing only. 
-You may not copy, reuse, modify, distribute, or use any part of this repository without explicit verbal or written permission.
+📩 If you want to request permission for any use case, contact me at [priyanshusingh2508@gmail.com]
+
+© 2025 Priyanshu Singh – All Rights Reserved.
 
