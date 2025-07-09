@@ -13,7 +13,7 @@ Welcome to EveryAI, a modern Angular 18 web site that serves as a curated direct
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack 
 
 | Tech             | Purpose                              |
 |------------------|--------------------------------------|
