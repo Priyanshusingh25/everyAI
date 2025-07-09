@@ -90,7 +90,7 @@ This project is publicly viewable for educational and demonstration purposes onl
 - Host or deploy this project elsewhere
 - Use any part of this repository in your own projects (personal, academic, or commercial)
 
-📩 If you want to request permission for any use case, contact me at 🔗 [Gmail](singhpriyanshu2508@gmail.com)
+📩 If you want to request permission for any use case, contact me at 🔗 [Gmail](mailto:singhpriyanshu2508@gmail.com)
 
 © 2025 Priyanshu Singh – All Rights Reserved.
 
