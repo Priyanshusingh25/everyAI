@@ -73,3 +73,11 @@ Want to add more tools or improve the UI? Contributions are welcome! 👀🤗
 📬 Contact
 Built with ❤️ by Priyanshu Singh
 Feel free to reach out with feedback, ideas, or just to say hi!
+
+Copyright (c) 2025 [Priyanshu Singh]
+
+All rights reserved.
+
+This source code is made publicly available for viewing only. 
+You may not copy, reuse, modify, distribute, or use any part of this repository without explicit verbal or written permission.
+
